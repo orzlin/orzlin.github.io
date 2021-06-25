@@ -83,21 +83,20 @@ function oz_add(event) {
 }
 
 //一个作用是可以拖动
-for (let i = 0; i < moveItem.length; i++) {
-    moveItem[i].ondragstart = function (ev) {
-        ev.dataTransfer.setData("Text", this.id);
-    }
+document.ondragstart=function (ev) {
+    ev.dataTransfer.setData("Text", ev.target.id);
 }
 //拖拽元素事件绑定 修改vue对象，vue进行监听；更新；渲染
 for (let i of ll) {
     let item = document.getElementById(i);
-    item.ondragover = function (ev) {
-        ev.preventDefault();
+    item.ondragover = function (e) {
+        e.preventDefault();
     }
     item.ondrop = function (ev) {
         //防止拖动后触发点击事件
         ev.preventDefault();
         let id = ev.dataTransfer.getData('Text');
+
         let elem = document.getElementById(id);
         let toElem = ev.target;
         let dd = {"name": elem.innerText, "value": elem.href, "id": elem.id};

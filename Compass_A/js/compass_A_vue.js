@@ -70,7 +70,6 @@ const app=new Vue(
             this.eight=JSON.parse(localStorage.eight);
         },
         updated(){
-            // alert("updated")
             let list=[this.one,this.two,this.three,this.four,this.five,this.six,this.seven,this.eight];
             let count=1;
             for(i of list){
@@ -79,6 +78,7 @@ const app=new Vue(
                     count+=1;
                 }
             }
+
             localStorage.setItem("one",JSON.stringify(this.one));
             localStorage.setItem("two",JSON.stringify(this.two));
             localStorage.setItem("three",JSON.stringify(this.three));
