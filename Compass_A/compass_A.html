@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+
+    <meta charset="UTF-8">
+    <title>Compass</title>
+    <link href="css/compass_A.css" rel="stylesheet">
+</head>
+
+<body id="body">
+<div class="shadowbox">
+    <div id="addBox">
+        <table id="add_table">
+            <thread>
+                <td scope="col">网站名</td>
+                <td scope="col">网址</td>
+                <td></td>
+            </thread>
+            <tr>
+                <td><input id="siteName" type="text"></td>
+                <td><input id="siteAddress" type="text"></td>
+                <td>
+                    <button id="add">添加</button>
+                    <button id="cancel">取消</button>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="s">
+        <select id="sBox" name="selectBox">
+            <option value="baidu">百度</option>
+            <option value="yandex">Yandex</option>
+            <option value="google">Google</option>
+            <option value="bing">Bing</option>
+        </select>
+        <input autocomplete="off" class="input" id="input" type="text">
+        <button class="o_42" id="o_42">࿊</button>
+
+    </div>
+    <div class="nav" id="app">
+        <ul id="one">
+            <li class="trigram" id="trigram1">☰</li>
+            <li class="add"><b>+</b></li>
+            <template v-for="i  in one">
+                <li draggable="true">
+                    <a :href="i.value" :id="i.id" draggable="true" target="_blank">{{i.name}} </a><span
+                        class="remove"><b>&nbsp;-</b></span>
+                </li>
+            </template>
+
+        </ul>
+        <ul id="two">
+            <li class="trigram" id="trigram2">☴</li>
+            <li class="add"><b>+</b></li>
+            <template v-for="i  in two">
+                <li draggable="true">
+                    <a :href="i.value" :id="i.id" draggable="true" target="_blank">{{i.name}} </a><span
+                        class="remove"><b>&nbsp;-</b></span>
+                </li>
+            </template>
+        </ul>
+        <ul id="three">
+            <li class="trigram" id="trigram3">☱</li>
+            <li class="add"><b>+</b></li>
+            <template v-for="i  in three">
+                <li draggable="true">
+                    <a :href="i.value" :id="i.id" draggable="true" target="_blank">{{i.name}} </a><span
+                        class="remove"><b>&nbsp;-</b></span>
+                </li>
+            </template>
+
+        </ul>
+        <ul id="four">
+            <li class="trigram" id="trigram4">☲</li>
+            <li class="add"><b>+</b></li>
+            <template v-for="i  in four">
+                <li draggable="true">
+                    <a :href="i.value" :id="i.id" draggable="true" target="_blank">{{i.name}} </a><span
+                        class="remove"><b>&nbsp;-</b></span>
+                </li>
+            </template>
+
+        </ul>
+        <ul id="five">
+            <li class="trigram" id="trigram5">☶</li>
+            <li class="add"><b>+</b></li>
+            <template v-for="i  in five">
+                <li draggable="true">
+                    <a :href="i.value" :id="i.id" draggable="true" target="_blank">{{i.name}} </a><span
+                        class="remove"><b>&nbsp;-</b></span>
+                </li>
+            </template>
+        </ul>
+        <ul id="six">
+            <li class="trigram" id="trigram6">☳</li>
+            <li class="add"><b>+</b></li>
+            <template v-for="i  in six">
+                <li draggable="true">
+                    <a :href="i.value" :id="i.id" draggable="true" target="_blank">{{i.name}} </a><span
+                        class="remove"><b>&nbsp;-</b></span>
+                </li>
+            </template>
+
+        </ul>
+        <ul id="seven">
+            <li class="trigram" id="trigram7">☵</li>
+            <li class="add"><b>+</b></li>
+            <template v-for="i  in seven">
+                <li draggable="true">
+                    <a :href="i.value" :id="i.id" draggable="true" target="_blank">{{i.name}} </a><span
+                        class="remove"><b>&nbsp;-</b></span>
+                </li>
+            </template>
+
+        </ul>
+        <ul id="eight">
+            <li class="trigram" id="trigram8">☷</li>
+            <li class="add"><b>+</b></li>
+            <template v-for="i  in eight">
+                <li draggable="true">
+                    <a :href="i.value" :id="i.id" draggable="true" target="_blank">{{i.name}} </a><span
+                        class="remove"><b>&nbsp;-</b></span>
+                </li>
+            </template>
+
+        </ul>
+    </div>
+    <!--❤ ✿ ♫-->
+    <div  id="customizeButton">
+        <span id="customizeShow">♥</span>
+        <span id="customizeImg">✿</span>
+        <span id="customizeMusic">♫</span>
+    </div>
+    <div id="time">
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="js/compass_A_vue.js"></script>
+<script src="js/compass_A.js"></script>
+</body>
+</html>
+
+
+
