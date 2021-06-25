@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+    position: relative;
+    background-repeat: repeat;
+    background-size:cover;
+}
+#body{
+    background-image:url(../images/backgraound.jpg);
+}
+.shadowbox{
+    position: absolute;
+    display: block;
+    width: 800px ;
+    left: 0;
+    right: 0;
+    margin: 50px auto;
+    border-style: none;
+    border-radius: 40px;
+    box-shadow: -1px -1px 10px #000;
+    background-color: rgba(255, 255, 255, 0.05);
+    min-height: 800px;
+}
+.s {
+    margin: 50px auto;
+    width: 600px;
+    height: 30px;
+    border-style: none;
+    border-radius: 2px;
+    box-shadow: 0px 0px 10px #000;
+
+}
+.o_42 {
+    font-size: 20px;
+    float: right;
+    margin-right: 10px;
+    line-height: 20px;
+    background: unset;
+    border-style: unset;
+}
+.input:focus {
+    outline: none;
+    color: black;
+}
+.input {
+    width: 480px;
+    height: 30px;
+    border-style: unset;
+    background-color: unset;
+}
+#sBox {
+    background: none;
+    border-style: none;
+}
+.nav {
+    font-size: 16px;
+    color: black;
+    display: flex;
+    justify-content: center;
+    flex-flow: wrap;
+}
+.trigram {
+    cursor: pointer;
+}
+.add {
+    display: none;
+    cursor: pointer;
+}
+
+.remove {
+    display: none;
+    cursor: pointer;
+}
+ul {
+    margin-top: 10px;
+    list-style-type: none;
+    text-align: center;
+    display: block;
+    float: left;
+
+}
+li {
+    margin-top:15px;
+    line-height: 30px;
+    width: 100px;
+
+
+}
+a {
+    display: inline-block !important;
+    word-wrap: break-word;
+    width: 70px;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: 0px 0px 3px #000;
+    /*text-shadow: rgba(21, 18, 18, 0.5) 2px 2px 2px;*/
+}
+#addBox{
+    position: absolute;
+    top:40%;
+    left:11%;
+    width: 600px;
+    height: 60px;
+    background-color: rgba(255, 255, 255, 0.73);
+    border: 0.1em solid white;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px #000;
+    display: none;
+}
+#add_table {
+    text-align: center;
+    margin: 0 auto;
+}
+
+#siteAddress {
+    width: 400px;
+}
+
+#siteName {
+    width: 80px;
+}
+
+
+
+#customizeButton {
+    padding: 0px;
+    margin: 150px auto 0px;
+    width: 60px;
+    background: unset;
+    border-radius: unset;
+    box-shadow: unset;
+
+}
+#customizeMusic{
+    cursor: pointer;
+}
+#customizeShow{
+    cursor: pointer;
+}
+#customizeImg{
+    cursor: pointer;
+}
+
+#time{
+    margin: 10px auto;
+    width: 180px;
+
+}
+
+
